@@ -1,0 +1,250 @@
+Last login: Thu Jan 23 13:33:09 on console
+Wesleys-MacBook-Air:~ weswheless$ pwd
+/Users/weswheless
+Wesleys-MacBook-Air:~ weswheless$ ruby landmarks.rb
+ruby: No such file or directory -- landmarks.rb (LoadError)
+Wesleys-MacBook-Air:~ weswheless$ ~/Users/weswheless/landmarks.rb
+-bash: /Users/weswheless/Users/weswheless/landmarks.rb: No such file or directory
+Wesleys-MacBook-Air:~ weswheless$ ~/Users/weswheless
+-bash: /Users/weswheless/Users/weswheless: No such file or directory
+Wesleys-MacBook-Air:~ weswheless$ cd weswheless
+-bash: cd: weswheless: No such file or directory
+Wesleys-MacBook-Air:~ weswheless$ ~Users/weswheless/week3
+-bash: ~Users/weswheless/week3: No such file or directory
+Wesleys-MacBook-Air:~ weswheless$ ~/Users/weswheless/week3
+-bash: /Users/weswheless/Users/weswheless/week3: No such file or directory
+Wesleys-MacBook-Air:~ weswheless$ pwd
+/Users/weswheless
+Wesleys-MacBook-Air:~ weswheless$ cd week3
+Wesleys-MacBook-Air:week3 weswheless$ ls
+example_weather.html	landmarks.rb		scrabble.rb
+generate_weather.rb	score.json		weather.css
+Wesleys-MacBook-Air:week3 weswheless$ cd /Users/weswheless/week3
+Wesleys-MacBook-Air:week3 weswheless$ ruby landmarks.rb
+Hello!
+Wesleys-MacBook-Air:week3 weswheless$ irb
+>> irb
+ArgumentError: wrong number of arguments (0 for 1)
+	from (eval):14:in `irb'
+	from (eval):14:in `send'
+	from (eval):14:in `irb'
+	from (irb):1
+>> pwd
+NameError: undefined local variable or method `pwd' for main:Object
+	from (irb):2
+>> 
+Last login: Thu Jan 23 14:21:53 on ttys000
+Wesleys-MacBook-Air:week3 weswheless$ irb
+>> cd week3
+NameError: undefined local variable or method `week3' for main:Object
+	from (irb):1
+>> 
+Last login: Thu Jan 23 14:42:20 on ttys000
+Wesleys-MacBook-Air:week3 weswheless$ irb
+>> 2+2
+=> 4
+>> "Hello"
+=> "Hello"
+>> "hello" + "there"
+=> "hellothere"
+>> "Hello There"
+=> "Hello There"
+>> "hello" x "there"
+SyntaxError: compile error
+(irb):5: syntax error, unexpected tIDENTIFIER, expecting $end
+"hello" x "there"
+         ^
+	from (irb):5
+>> "Y" + "AAAAASSSSS"
+=> "YAAAAASSSSS"
+>> puts "Hello"
+Hello
+=> nil
+>> 2+2
+=> 4
+>> "Hello"
+=> "Hello"
+>> "Hello".upcase
+=> "HELLO"
+>> "Hello".caps
+NoMethodError: undefined method `caps' for "Hello":String
+	from (irb):11
+>> "Hello".downcase
+=> "hello"
+>> "Hello".lowercase
+NoMethodError: undefined method `lowercase' for "Hello":String
+	from (irb):13
+>> .
+?> 4.4
+SyntaxError: compile error
+(irb):14: syntax error, unexpected '.'
+	from (irb):15
+>> "hello".methods
+=> ["upcase!", "zip", "find_index", "between?", "unpack", "each_slice", "to_f", "minmax", "lines", "sub", "methods", "send", "replace", "empty?", "group_by", "squeeze", "crypt", "gsub!", "taint", "instance_variable_defined?", "match", "downcase!", "take", "find_all", "min_by", "bytes", "enum_slice", "entries", "gsub", "singleton_methods", "instance_eval", "to_str", "first", "chop!", "intern", "nil?", "succ", "capitalize!", "take_while", "select", "max_by", "chars", "each_cons", "tr!", "protected_methods", "instance_exec", "display", "sort", "chop", "tainted?", "dump", "include?", "untaint", "instance_of?", "chomp!", "swapcase!", "drop", "equal?", "reject", "hex", "minmax_by", "sum", "enum_cons", "hash", "private_methods", "all?", "tr_s!", "sort_by", "chomp", "upcase", "method", "start_with?", "succ!", "kind_of?", "strip!", "freeze", "drop_while", "eql?", "next", "collect", "oct", "id", "slice", "casecmp", "grep", "strip", "any?", "delete!", "public_methods", "end_with?", "downcase", "%", "is_a?", "scan", "lstrip!", "cycle", "map", "member?", "tap", "type", "*", "split", "insert", "each_with_index", "+", "count", "lstrip", "one?", "squeeze!", "instance_variables", "__id__", "frozen?", "capitalize", "next!", "each_line", "object_id", "rstrip!", "to_a", "ljust", "respond_to?", "upto", "each", "inject", "tr", "slice!", "class", "reverse", "length", "enum_with_index", "rpartition", "rstrip", "<=>", "none?", "instance_variable_get", "find", "==", "swapcase", "__send__", "===", "min", "each_byte", "to_enum", "extend", "to_s", "rjust", "index", ">=", "size", "reduce", "tr_s", "<=", "clone", "reverse_each", "to_sym", "bytesize", "=~", "instance_variable_set", "<", "detect", "max", "each_char", "enum_for", ">", "to_i", "center", "inspect", "[]", "reverse!", "rindex", "partition", "delete", "[]=", "concat", "sub!", "dup", "<<"]
+>> "hello".slice!
+ArgumentError: wrong number of arguments (0 for 1)
+	from (irb):17:in `slice!'
+	from (irb):17
+>> "hello".methods.count
+=> 176
+>> "hello".count
+ArgumentError: wrong number of arguments
+	from (irb):19:in `count'
+	from (irb):19
+>> "hello".display
+hello=> nil
+>> "hello".reverse!
+=> "olleh"
+>> "hello.inspect
+
+"hello.inspect
+SyntaxError: compile error
+(irb):24: syntax error, unexpected tIDENTIFIER, expecting $end
+"hello.inspect
+      ^
+	from (irb):24
+>> "hello".methonds.class
+NoMethodError: undefined method `methonds' for "hello":String
+	from (irb):25
+>> "hello".methods.class
+=> Array
+>> "hello".center
+ArgumentError: wrong number of arguments (0 for 1)
+	from (irb):27:in `center'
+	from (irb):27
+>> "hello".swapcase
+=> "HELLO"
+>> "hello".reverse.swapcase
+=> "OLLEH"
+>> "hello".reverse.swapcase.reverse
+=> "HELLO"
+>> name = "Wes"
+=> "Wes"
+>> puts name
+Wes
+=> nil
+>> name.reverse
+=> "seW"
+>> name.reverse.swapcase
+=> "SEw"
+>> name.length
+=> 3
+>> favorites = [16, "Wes", "blue"]
+=> [16, "Wes", "blue"]
+>> favorites.count
+=> 3
+>> puts favorites
+16
+Wes
+blue
+=> nil
+>> favorites.push(16)
+=> [16, "Wes", "blue", 16]
+>> favorites.push("Wes")
+=> [16, "Wes", "blue", 16, "Wes"]
+>> favorites.pull("Wes")
+NoMethodError: undefined method `pull' for [16, "Wes", "blue", 16, "Wes"]:Array
+	from (irb):41
+>> favorites = [16, "Wes", "blue"]
+=> [16, "Wes", "blue"]
+>> music = ["Mariah", "Yonce"]
+=> ["Mariah", "Yonce"]
+>> favorites.push(music)
+=> [16, "Wes", "blue", ["Mariah", "Yonce"]]
+>> favorits.at(0)
+NameError: undefined local variable or method `favorits' for main:Object
+	from (irb):45
+>> favorites.at(0)
+=> 16
+>> favorites.at(4)
+=> nil
+>> favorites.at(3)
+=> ["Mariah", "Yonce"]
+>> favorites[1]
+=> "Wes"
+>> favorites.delete_at(2)
+=> "blue"
+>> favorites
+=> [16, "Wes", ["Mariah", "Yonce"]]
+>> favorites
+=> [16, "Wes", ["Mariah", "Yonce"]]
+>> favorites.class
+=> Array
+>> favorites = {"color"=>"purple, "number"=>7}
+favorites.class
+
+favorites.class
+favorites = {"color"=>"purple, "number"=>7}
+SyntaxError: compile error
+(irb):54: syntax error, unexpected tIDENTIFIER, expecting '}'
+favorites = {"color"=>"purple, "number"=>7}
+                                      ^
+(irb):58: syntax error, unexpected tIDENTIFIER, expecting $end
+favorites = {"color"=>"purple, "number"=>7}
+                   ^
+	from (irb):58
+>> favorites = {"color"=>"purple, "number"=>7}
+
+favorites = {"color"=>"purple, "number"=>7}
+SyntaxError: compile error
+(irb):59: syntax error, unexpected tIDENTIFIER, expecting '}'
+favorites = {"color"=>"purple, "number"=>7}
+                                      ^
+(irb):61: syntax error, unexpected tIDENTIFIER, expecting $end
+favorites = {"color"=>"purple, "number"=>7}
+                   ^
+	from (irb):61
+>> favorites = {"color"=>"purple", "number"=>7}
+=> {"color"=>"purple", "number"=>7}
+>> favorites.class
+=> Hash
+>> favorites_color
+NameError: undefined local variable or method `favorites_color' for main:Object
+	from (irb):64
+>> favorites_"color"
+NoMethodError: undefined method `favorites_' for main:Object
+	from (irb):65
+>> favorites[color]
+NameError: undefined local variable or method `color' for main:Object
+	from (irb):66
+>> favorites["color"]
+=> "purple"
+>> favorites["music"]
+=> nil
+>> favorites["school"]="Kellogg
+"
+=> "Kellogg\n"
+>> favorites["school"]="Kellogg"
+=> "Kellogg"
+>> favorites
+=> {"school"=>"Kellogg", "color"=>"purple", "number"=>7}
+>> favorites{:town] = "Miami"
+SyntaxError: compile error
+(irb):73: syntax error, unexpected ']', expecting '}'
+favorites{:town] = "Miami"
+                ^
+(irb):73: syntax error, unexpected $end, expecting '}'
+	from (irb):73
+>> favorites[:town] = "Miami"
+=> "Miami"
+>> favorites
+=> {"school"=>"Kellogg", "color"=>"purple", "number"=>7, :town=>"Miami"}
+>> favorites[:town}
+SyntaxError: compile error
+(irb):76: syntax error, unexpected '}', expecting ']'
+	from (irb):76
+>> favorites[town}
+SyntaxError: compile error
+(irb):77: syntax error, unexpected '}', expecting ']'
+	from (irb):77
+>> favorites[town]
+NameError: undefined local variable or method `town' for main:Object
+	from (irb):78
+>> favorites
+=> {"school"=>"Kellogg", "color"=>"purple", "number"=>7, :town=>"Miami"}
+>> favories[:town]
+NameError: undefined local variable or method `favories' for main:Object
+	from (irb):80
+>> favorites[:town]
+=> "Miami"
+>> 

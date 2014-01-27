@@ -17,21 +17,27 @@ puts cheap_property[:price]
 
 #Q2. How much does it cost to buy Boardwalk?
 #A2: Your code goes here:
-
+puts rich_property[:price]
 
 
 #Q3. How much is rent for Baltic?
 #A3: Your code goes here:
+puts cheap_property[:rent]
 
 
-
-#Q4. How much does it cost to buy New York Ave?
-#A4: Your code goes here:
-
-
+# #Q4. How much does it cost to buy New York Ave?
+# # A4: Your code goes here:
+# # puts more_properties[:name=New_York_Ave;:price]
+# Q4 = more_properties.at(2)
+# puts Q4
+puts more_properties.at(2)[:price]
+# Q4a=more_properties["New York Ave"]
+# puts Q4a
 
 #Q5: How many "good" special squares are there?
 #A5: Your code goes here:
+Q5 = special_squares[:good].count
+puts Q5
 
 
 
